@@ -1,13 +1,81 @@
 <!doctype html>
-<html  lang="fr">
-    <head>
-        <meta charset="utf-8">
-		<script src="datas.js"></script>
-		<script src="exo7.js"></script>
+<html lang="fr">
+
+<head>
+
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
-    <body>
-		<div class="container">
-			<h1>Exercice 7</h1>
-		</div>
-	</body>
+
+<body>
+	<div class="container">
+		<h1>Exercice 7</h1>
+		<!-- <form action="action_page.html" onsubmit="myFunction()"> -->
+		<form action="" id="myform">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="input">Champs texte</label>
+					<input type="text" class="form-control" id="user_input" placeholder="type">
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-10">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="myCheck">
+						<label class="form-check-label" for="gCheck">
+							Afficher seulement les articles en stock
+						</label>
+					</div>
+				</div>
+			</div>
+			<div>
+				<select class="form-control col-md-6 mb-2" id="mySelect">
+					<!--<option value="">--Please choose an option--</option>-->
+					<option value="ascNum">Du moins cher au plus cher</option>
+					<option value="descNum">Du plus cher au moins cher</option>
+					<option value="abc">trier par ordre alphabétique croissant</option>
+					<option value="zyx">trier par ordre alphabétique décroissant</option>
+				</select>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-10">
+					<button type="button" onclick="showProductsInput();" class="btn btn-primary">Envoyer</button>
+				</div>
+			</div>
+			<div class="form-row">
+					<div class="form-group col-md-6">
+							<label for="objectName">Entrer un nouvel objet :</label>
+							<input class="form-control" type="text" name="objectName" id="objectName" placeholder="Nom de l'objet">
+							<label for="objectType">Entrer son type :</label>
+							<input class="form-control" type="text" name="objectType" id="objectType" placeholder="Type de l'objet">
+							<label for="description">Entrer une description :</label>
+							<textarea class="form-control" rows="4" cols="50" type="text" name="description" id="objectDescription" placeholder="Description de l'objet"></textarea>
+							<label for="price">Entrer un prix :</label>		
+							<input class="form-control" type="number" name="price" id="objectPrice" placeholder="Prix de l'objet">
+							<label for="quantity">Entrer une quantité :</label>		
+							<input class="form-control" type="number" name="quantity" id="objectQuantity" placeholder="Quantité en stock">
+							
+
+
+					</div>
+				</div>
+				<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="button" onclick="addNewObject();" class="btn btn-primary">Ajouter</button>
+						</div>
+					</div>
+		</form>
+	</div>
+	</div>
+	</div>
+
+	<script src="datas.js"></script>
+	<script src="exo7.js"></script>
+
+
+</body>
+
 </html>

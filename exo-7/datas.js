@@ -54,4 +54,13 @@ var jsonDatas=[
 		"price" : 30,
 		"quantity" : 200
 	}
-]
+];
+var jsonDatasTypeTranslate =
+	{
+		"car" :"voiture",
+		"house" : "maison",
+		"game" : "jeu",
+		"videoGame" : "jeu vidéo",
+		"show" : "spectacle"	
+
+	};
