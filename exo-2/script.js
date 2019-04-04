@@ -3,10 +3,10 @@
 var registered = false;//prompt('Etes vous inscrit ? oui ou non');
 var ageOfRunner =  prompt('Quel age avez vous ?');
 
-var raceNumber;
+var raceNumber = 0;
 
 
-if (registered === 'non') {
+if (registered === false) {
     raceNumber += 1000;
 }
 else {
